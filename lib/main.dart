@@ -14,7 +14,13 @@ class AsynconfApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text("Asynconf"),
+          title: const Text(
+            "Asynconf",
+            style: TextStyle(
+              fontFamily: "Poppins",
+              color: Colors.white,
+            ),
+          ),
           backgroundColor: Colors.deepPurple[300],
         ),
         body: Center(
@@ -25,8 +31,19 @@ class AsynconfApp extends StatelessWidget {
                 "assets/images/logo.svg",
                 colorFilter: const ColorFilter.mode(Colors.deepPurple, BlendMode.srcIn),
               ),
-              const Text("Title"),
-              const Text("Subtitle"),
+              const SizedBox(
+                height: 20,
+              ),
+              const Text(
+                "Asynconf 2024",
+                style: TextStyle(
+                  fontFamily: "Poppins",
+                  fontSize: 32,
+                ),
+              ),
+              const Text(
+                "Salon virtuel de l'informatique."
+              ),
             ],
           ),
         ),
