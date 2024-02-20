@@ -24,8 +24,17 @@ class AsynconfApp extends StatelessWidget {
           ),
           backgroundColor: Colors.deepPurple[300],
         ),
-        body: const HomePage(),
+        body: const EventsPage(),
       )
     );
+  }
+}
+
+class EventsPage extends StatelessWidget {
+  const EventsPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
   }
 }
