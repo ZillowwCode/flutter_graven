@@ -86,6 +86,22 @@ class NotificationsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Center(
+      child: ElevatedButton(
+        onPressed: () => print("test"),
+        style: ElevatedButton.styleFrom(
+          backgroundColor: Colors.deepPurple[300],
+          elevation: 5,
+        ),
+        child: const Text(
+          "Tester les notifications",
+          style: TextStyle(
+            fontFamily: "Poppins",
+            fontSize: 14,
+            color: Colors.white,
+          ),
+        ),
+      )
+    );
   }
 }
