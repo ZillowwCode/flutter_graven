@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 void main() {
   runApp(const AsynconfApp());
@@ -16,13 +17,16 @@ class AsynconfApp extends StatelessWidget {
           title: const Text("Asynconf"),
           backgroundColor: Colors.deepPurple[300],
         ),
-        body: const Center(
+        body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Placeholder(),
-              Text("Title"),
-              Text("Subtitle"),
+              SvgPicture.asset(
+                "assets/images/logo.svg",
+                colorFilter: const ColorFilter.mode(Colors.deepPurple, BlendMode.srcIn),
+              ),
+              const Text("Title"),
+              const Text("Subtitle"),
             ],
           ),
         ),
